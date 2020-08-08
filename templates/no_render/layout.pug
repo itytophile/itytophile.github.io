@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    block title
+      title ityt
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css")
+    script(src="burger.js")
+  body
+    nav.navbar.has-shadow.is-link(aria-label="main navigation")
+      .navbar-brand
+        a.navbar-item(href="index.html")
+          strong ityt
+        a.navbar-burger.burger(role="button" aria-label="menu" aria-expanded="false" data-target="navbar_menu")
+          span(aria-hidden="true")
+          span(aria-hidden="true")
+          span(aria-hidden="true")
+      .navbar-menu#navbar_menu
+        .navbar-start
+          .navbar-item.has-dropdown.is-hoverable#menu
+            a.navbar-link Menu
+            .navbar-dropdown
+              a.navbar-item(href="index.html") Home
+              a.navbar-item(href="personnal.html") Personnal projects
+              a.navbar-item Université related projects
+
+
+    block content
+      section.section
+        p content
