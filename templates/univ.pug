@@ -1,0 +1,35 @@
+extends no_render/layout.pug
+
+block title
+  title ityt - Université projects
+
+block content
+  section.section.has-text-centered
+    .container
+      h1.title.is-1 Some of my Université related programming projects
+      p.subtitle by Imran Tierce a.k.a. ityt
+
+  section.section.has-text-centered
+    h2.title
+      | With
+      a(href="https://www.python.org/")  Python
+    .container
+      p.subtitle -- French literary awards web scraping --
+      p Just a little python script to get enough data to feed a database for a PHP project. More details
+        a(href="https://github.com/itytophile/prixLitteraireScraping")  here.
+  
+  section.section.has-text-centered.has-background-light
+    h2.title
+      | With
+      a(href="https://www.php.net/")  PHP
+    .container
+      p.subtitle
+        a(href="crud.html") -- CRUD website about French literary awards --
+      p This a group project (3 people) to make a PHP server where you can interact with a database through a web interface.
+    .container
+      p.subtitle
+        br
+        | -- CRUD website with symfony --
+      p
+        | It is the same project but with a symfony server. Git link
+        a(href="https://github.com/itytophile/crud_symfony")  here.
