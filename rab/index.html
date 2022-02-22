@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="shortcut icon" type="image/ico" href="/src/assets/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/b7da605005.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>RAB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="preload"
+      src="./index-1792f6cee0b1da06_bg.wasm"
+      as="fetch"
+      type="application/wasm"
+    />
+    <link rel="modulepreload" src="./index-1792f6cee0b1da06.js" />
+  </head>
+  <body id="main">
+    <script type="module">
+      import init from "./index-1792f6cee0b1da06.js";
+      init("./index-1792f6cee0b1da06_bg.wasm");
+    </script>
+  </body>
+</html>
